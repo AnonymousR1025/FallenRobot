@@ -13,15 +13,15 @@ import io
 caption = """
 » ʟᴏɢᴏ sᴜᴄᴄᴇssꜰᴜʟʟʏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙᴀʙʏ​ «
 `◇───────────────◇`
-💔 **ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ** : [ᴀɴᴏɴʏᴍᴏᴜs](https://t.me/FallenXRobot)
+💔 **ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ** : [𝐋𝐮𝐜𝐤𝐲](https://t.me/lucky_officialbot)
 😇 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ ​** : {}
-💕 **ᴘᴏᴡᴇʀᴇᴅ ʙʏ​ **  : [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](https://t.me/anonymous_was_bot)
+💕 **ᴘᴏᴡᴇʀᴇᴅ ʙʏ​ **  : [𝐋𝐮𝐜𝐤𝐲](https://t.me/cute_boy701)
 `◇───────────────◇️  `
     """
-JOIN_ASAP = f" **🚫 Access Denied**\n\n You have to join [My Group](https://t.me/DevilsHeavenMF) to use me. So, please join it & Try Again." 
+JOIN_ASAP = f" **🚫 Access Denied**\n\n You have to join [My Group](https://t.me/terayaarhoomai) to use me. So, please join it & Try Again." 
 FSUBB = InlineKeyboardMarkup( 
            [[ 
-               InlineKeyboardButton(text="• Group • ", url=f"https://t.me/DevilsHeavenMF") 
+               InlineKeyboardButton(text="• Group • ", url=f"https://t.me/terayaarhoomai") 
            ]] 
 )
 
@@ -81,7 +81,7 @@ async def logo(client, message):
 @app.on_message(filters.command("logohq"))
 async def on_off_antiarab(_, message: Message):
     try:
-        await message._client.get_chat_member(int("-1001686672798"), message.from_user.id)
+        await message._client.get_chat_member(int("-1001501055984"), message.from_user.id)
     except UserNotParticipant:
         await message.reply_text(
         text=JOIN_ASAP, disable_web_page_preview=True, reply_markup=FSUBB
@@ -136,7 +136,7 @@ async def on_off_antiarab(_, message: Message):
 @app.on_message(filters.command("wall"))
 async def on_off_antiarab(_, message: Message):
     try:
-        await message._client.get_chat_member(int("-1001686672798"), message.from_user.id)
+        await message._client.get_chat_member(int("-1001501055984"), message.from_user.id)
     except UserNotParticipant:
         await message.reply_text(
         text=JOIN_ASAP, disable_web_page_preview=True, reply_markup=FSUBB
@@ -190,7 +190,7 @@ async def on_off_antiarab(_, message: Message):
     await m.delete()
 
 __f__ = """
-**Create Beautiful logos for your profile pictures from Fallen.**
+**Create Beautiful logos for your profile pictures from Lucky.**
 ×  /logo [TEXT]: Create a logo 
 ×  /logohq [TEXT]: Create a HQ logo 
 ×  /write [TEXT] : hand writer
@@ -198,6 +198,6 @@ __f__ = """
 ×  /slogo [TEXT] : New Beautiful trending logo
 
 
-Logo Maker is Powered by @SingleDevelopers & @MrItzme
+Logo Maker is Powered by @terayaarhoomai & @cute_boy701
  """
 __mod_name__ = "Lavda"
