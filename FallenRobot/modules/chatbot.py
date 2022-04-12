@@ -17,7 +17,7 @@ from telegram.utils.helpers import mention_html, mention_markdown, escape_markdo
 
 from FallenRobot.modules.helper_funcs.filters import CustomFilters
 from FallenRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from FallenRobot import dispatcher, updater, SUPPORT_CHAT
+from FallenRobot import dispatcher, updater, SUPPORT_CHAT, KUKI_API
 from FallenRobot.modules.log_channel import gloggable
 
 @run_async
@@ -117,7 +117,7 @@ def chatbot(update: Update, context: CallbackContext):
             return
         sweetie = message.text
         bot.send_chat_action(chat_id, action="typing")
-        url = f"https://kukiapi.xyz/api/apikey=1356469075-KUKIkq4WMg5FV4/Fallen/Anonymous/message={sweetie}" 
+        url = f"https://kukiapi.xyz/api/apikey={KUKI_API}/Fallen/Anonymous/message={sweetie}" 
         request = requests.get(url) 
         results = json.loads(request.text) 
         boyresult = f"{results['reply']}"
@@ -141,6 +141,8 @@ def list_all_chats(update: Update, context: CallbackContext):
 __help__ = """
 *Admins only Commands*:
   »  /chatbot *:* Shows chatbot control panel
+
+Powered By @Metavoid
 
 """
 
