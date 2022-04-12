@@ -101,6 +101,11 @@
          "required": false,
          "value": ""
       }, 
+      "KUKI_API": {
+         "description": "KUKI API Token, Get one from @KUKICHATBOT.",
+         "required": false,
+         "value": ""
+      }, 
       "STRICT_GBAN": {
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
          "value": "True"
