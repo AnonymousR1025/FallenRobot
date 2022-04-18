@@ -4,7 +4,7 @@ lxml
 wget
 beautifulsoup4
 requests
-python-telegram-bot==12.8
+python-telegram-bot==13.11
 sqlalchemy==1.4.35
 PyDictionary
 psycopg2-binary
