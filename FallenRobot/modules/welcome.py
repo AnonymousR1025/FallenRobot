@@ -1,5 +1,4 @@
 import html
-import sys
 import random
 import re
 import time
@@ -10,10 +9,8 @@ import FallenRobot.modules.sql.welcome_sql as sql
 import FallenRobot
 from FallenRobot import (
     DEV_USERS,
-    DEVELOPER,
     LOGGER,
     OWNER_ID,
-    OWNER_USERNAME,
     DRAGONS,
     DEMONS,
     TIGERS,
@@ -818,14 +815,6 @@ def reset_goodbye(update: Update, context: CallbackContext) -> str:
         f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
         f"Reset the goodbye message."
     )
-
-x = "anonymous_was_bot"
-
-if DEVELOPER != x:
-    print("Sorry you have changed developer please change it back to anonymous_was_bot else I won't work")
-    sys.exit(1)
-else:
-    print("Starting hehe")
 
 
 @run_async
