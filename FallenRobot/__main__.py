@@ -91,7 +91,7 @@ buttons = [
         InlineKeyboardButton(
             text="💞 ᴀʙᴏᴜᴛ ᴍᴇ​​ 💞", callback_data="fallen_"),
         InlineKeyboardButton(
-            text="🙄 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🙄", callback_data="source_"),
+            text="🙄 AbouT Owner 🙄", url=f"https://t.me/about_aakash"),
     ],
     [
         InlineKeyboardButton(
