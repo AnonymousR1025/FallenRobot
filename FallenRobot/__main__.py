@@ -379,7 +379,9 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text="""*ʜᴇʏ,*\n\n*ᴛʜɪs ɪs Λʏᴜᴍɪ〆ᴜɴɪ✗✗*\n\n*ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴩᴇʀ :* [Anu](https://t.me/an_unic_orn_47)\n\n*puii*\n*sᴏ ɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ʀᴇǫᴜᴇsᴛ ᴀɴʏ ғᴇᴀᴛᴜʀᴇ, ᴩʟᴇᴀsᴇ ʟᴇᴛ ᴜs ᴋɴᴏᴡ ᴀᴛ* [ΛꋊU](https://t.me/anu_pui) *ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴩᴇʀ :* [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](https://t.me/an_unic_orn_47)""",
+            text="""*ʜᴇʏ,*\n\n*ᴛʜɪs ɪs Λʏᴜᴍɪ〆ᴜɴɪ✗✗*\n\n*ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴩᴇʀ :* [Anu](https://t.me/an_unic_orn_47)\n\n*puii*\n*sᴏ ɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ʀᴇǫᴜᴇsᴛ ᴀɴʏ ғᴇᴀᴛᴜʀᴇ, ᴩʟᴇᴀsᴇ ʟᴇᴛ ᴜs ᴋɴᴏᴡ ᴀᴛ* [ΛꋊU](https://t.me/anu_pui) *ᴇɴᴛᴇʀ /pui ғᴏʀ ᴇɴᴛᴇʀɪɴɢ ɪɴᴛᴏ ᴍᴜsɪᴄ ᴄᴍᴅ ᴍᴇɴᴜ...* ᴀɴᴅ ʜᴏᴘᴇ ʏᴏᴜ ʟɪᴋᴇ ᴛʜɪs ʙᴏᴛ 
+
+sᴜᴘᴘᴏʀᴛ [Λɴᴜ](https://t.me/anu_music00bot)""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
