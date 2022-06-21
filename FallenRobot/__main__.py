@@ -389,7 +389,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
                         text="◁", callback_data="source_back"
                     ),
                     InlineKeyboardButton(
-                        text="◁", callback_data="source_back"
+                        text="music", callback_data="/pui"
                     ),
                  ]
                 ]
