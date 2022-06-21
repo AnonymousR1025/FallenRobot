@@ -385,10 +385,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="◁", callback_data="source_back")
-                    ),
-                    InlineKeyboardButton(text="◁", callback_data="source_back")
-                    ),
+                    InlineKeyboardButton(text="◁", callback_data="source_back"),
+                    InlineKeyboardButton(text="◁", callback_data="source_back"),
                  [
                 [
     elif query.data == "source_back":
