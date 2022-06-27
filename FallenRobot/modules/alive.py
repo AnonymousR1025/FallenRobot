@@ -1,3 +1,6 @@
+# Credit Goes To www.github.com/Legend-Mukund
+# <www.github.com/Legend-Mukund/META-ROBOT>
+
 import random
 import asyncio
 from pyrogram import filters, __version__ as pver
