@@ -1,9 +1,24 @@
+# Remodified The Uploading msg is now deleted automatically 
+# I commited this bcz that msg sucks me 😤
+# Credits www.github.com/Legend-Mukund
+# <https://github.com/AnonymousR1025/FallenRobot>
+
 from pyrogram import filters
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from FallenRobot import pbot
+from FallenRobot import pbot as bot, BOT_USERNAME, SUPPORT_CHAT
 
+SHREYXD = [
+    [
+        InlineKeyboardButton(text="ʜᴇʟᴘ", url=f"https://t.me/{BOT_USERNAME}?start=help"),
+        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+    ],
+    [
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"http://t.me/{BOT_USERNAME}?startgroup=true"),
+    ],
+]
 
-@pbot.on_message(filters.command("write"))
+@bot.on_message(filters.command("write"))
 async def handwriting(_, message):
     if len(message.command) < 2:
         return await message.reply_text("» ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴡʀɪᴛᴇ ɪᴛ ᴏɴ ᴍʏ ᴄᴏᴩʏ...")
@@ -15,11 +30,13 @@ async def handwriting(_, message):
     )
     hand = "https://apis.xditya.me/write?text=" + name
     await m.edit("» ᴜᴩʟᴏᴀᴅɪɴɢ...")
-    await pbot.send_chat_action(message.chat.id, "upload_photo")
+    await m.delete()
+    await bot.send_chat_action(message.chat.id, "upload_photo")
     await message.reply_photo(
-        hand, caption="ᴡʀɪᴛᴛᴇɴ ᴡɪᴛʜ 🖊 ʙʏ [ғᴀʟʟᴇɴ](t.me/FallenXRobot)"
+        hand, 
+        caption="ᴡʀɪᴛᴛᴇɴ ᴡɪᴛʜ 🖊 ʙʏ [ғᴀʟʟᴇɴ](t.me/FallenXRobot)",
+        reply_markup=InlineKeyboardMarkup(SHREYXD)
     )
-
 
 __mod_name__ = "Hᴀɴᴅᴡʀɪᴛᴇ"
 
