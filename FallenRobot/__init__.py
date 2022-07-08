@@ -3,7 +3,7 @@ import os
 import sys
 import time
 
-import telegram.ext as tg 
+import telegram.ext as tg
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 from aiohttp import ClientSession
 from Python_ARQ import ARQ
@@ -207,6 +207,7 @@ botid = 0
 botname = ""
 botusername = ""
 
+
 async def initiate_bot():
     global botid, botname, botusername
     await aapp.start()
@@ -217,6 +218,7 @@ async def initiate_bot():
         botname = getme.first_name + " " + getme.last_name
     else:
         botname = getme.first_name
+
 
 loop.run_until_complete(initiate_bot())
 
